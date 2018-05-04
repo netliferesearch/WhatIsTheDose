@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import WhatIsTheDose3
+@testable import WhatIsTheDose
 
-class WhatIsTheDose3Tests: XCTestCase {
+class WhatIsTheDoseTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -19,6 +19,10 @@ class WhatIsTheDose3Tests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+    }
+    
+    func testParseCommaText() {
+        XCTAssert(Double("8,9".replacingOccurrences(of: ",", with: ".")) == 8.9, "Should have parsed text into float")
     }
     
     func testExample() {

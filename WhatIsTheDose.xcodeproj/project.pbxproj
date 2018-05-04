@@ -13,7 +13,8 @@
 		F7B91A5A2099C95B00CC0416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B91A582099C95B00CC0416 /* Main.storyboard */; };
 		F7B91A5C2099C95B00CC0416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B91A5B2099C95B00CC0416 /* Assets.xcassets */; };
 		F7B91A5F2099C95B00CC0416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B91A5D2099C95B00CC0416 /* LaunchScreen.storyboard */; };
-		F7B91A6A2099C95B00CC0416 /* WhatIsTheDose3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B91A692099C95B00CC0416 /* WhatIsTheDose3Tests.swift */; };
+		F7B91A6A2099C95B00CC0416 /* WhatIsTheDoseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B91A692099C95B00CC0416 /* WhatIsTheDoseTests.swift */; };
+		F7B91A752099DEB700CC0416 /* UITextField+DoneCancelToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B91A742099DEB700CC0416 /* UITextField+DoneCancelToolbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F7B91A4F2099C95B00CC0416 /* WhatIsTheDose3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsTheDose3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B91A4F2099C95B00CC0416 /* WhatIsTheDose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsTheDose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B91A522099C95B00CC0416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7B91A542099C95B00CC0416 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F7B91A562099C95B00CC0416 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -35,9 +36,10 @@
 		F7B91A5B2099C95B00CC0416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7B91A5E2099C95B00CC0416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7B91A602099C95B00CC0416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7B91A652099C95B00CC0416 /* WhatIsTheDose3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatIsTheDose3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7B91A692099C95B00CC0416 /* WhatIsTheDose3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsTheDose3Tests.swift; sourceTree = "<group>"; };
+		F7B91A652099C95B00CC0416 /* WhatIsTheDoseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatIsTheDoseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B91A692099C95B00CC0416 /* WhatIsTheDoseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsTheDoseTests.swift; sourceTree = "<group>"; };
 		F7B91A6B2099C95B00CC0416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B91A742099DEB700CC0416 /* UITextField+DoneCancelToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+DoneCancelToolbar.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,8 @@
 		F7B91A462099C95B00CC0416 = {
 			isa = PBXGroup;
 			children = (
-				F7B91A512099C95B00CC0416 /* WhatIsTheDose3 */,
-				F7B91A682099C95B00CC0416 /* WhatIsTheDose3Tests */,
+				F7B91A512099C95B00CC0416 /* WhatIsTheDose */,
+				F7B91A682099C95B00CC0416 /* WhatIsTheDoseTests */,
 				F7B91A502099C95B00CC0416 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,41 +72,42 @@
 		F7B91A502099C95B00CC0416 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7B91A4F2099C95B00CC0416 /* WhatIsTheDose3.app */,
-				F7B91A652099C95B00CC0416 /* WhatIsTheDose3Tests.xctest */,
+				F7B91A4F2099C95B00CC0416 /* WhatIsTheDose.app */,
+				F7B91A652099C95B00CC0416 /* WhatIsTheDoseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F7B91A512099C95B00CC0416 /* WhatIsTheDose3 */ = {
+		F7B91A512099C95B00CC0416 /* WhatIsTheDose */ = {
 			isa = PBXGroup;
 			children = (
 				F7B91A522099C95B00CC0416 /* AppDelegate.swift */,
 				F7B91A542099C95B00CC0416 /* FirstViewController.swift */,
 				F7B91A562099C95B00CC0416 /* SecondViewController.swift */,
 				F7B91A582099C95B00CC0416 /* Main.storyboard */,
+				F7B91A742099DEB700CC0416 /* UITextField+DoneCancelToolbar.swift */,
 				F7B91A5B2099C95B00CC0416 /* Assets.xcassets */,
 				F7B91A5D2099C95B00CC0416 /* LaunchScreen.storyboard */,
 				F7B91A602099C95B00CC0416 /* Info.plist */,
 			);
-			path = WhatIsTheDose3;
+			path = WhatIsTheDose;
 			sourceTree = "<group>";
 		};
-		F7B91A682099C95B00CC0416 /* WhatIsTheDose3Tests */ = {
+		F7B91A682099C95B00CC0416 /* WhatIsTheDoseTests */ = {
 			isa = PBXGroup;
 			children = (
-				F7B91A692099C95B00CC0416 /* WhatIsTheDose3Tests.swift */,
+				F7B91A692099C95B00CC0416 /* WhatIsTheDoseTests.swift */,
 				F7B91A6B2099C95B00CC0416 /* Info.plist */,
 			);
-			path = WhatIsTheDose3Tests;
+			path = WhatIsTheDoseTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F7B91A4E2099C95B00CC0416 /* WhatIsTheDose3 */ = {
+		F7B91A4E2099C95B00CC0416 /* WhatIsTheDose */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7B91A6E2099C95B00CC0416 /* Build configuration list for PBXNativeTarget "WhatIsTheDose3" */;
+			buildConfigurationList = F7B91A6E2099C95B00CC0416 /* Build configuration list for PBXNativeTarget "WhatIsTheDose" */;
 			buildPhases = (
 				F7B91A4B2099C95B00CC0416 /* Sources */,
 				F7B91A4C2099C95B00CC0416 /* Frameworks */,
@@ -114,14 +117,14 @@
 			);
 			dependencies = (
 			);
-			name = WhatIsTheDose3;
+			name = WhatIsTheDose;
 			productName = WhatIsTheDose3;
-			productReference = F7B91A4F2099C95B00CC0416 /* WhatIsTheDose3.app */;
+			productReference = F7B91A4F2099C95B00CC0416 /* WhatIsTheDose.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F7B91A642099C95B00CC0416 /* WhatIsTheDose3Tests */ = {
+		F7B91A642099C95B00CC0416 /* WhatIsTheDoseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7B91A712099C95B00CC0416 /* Build configuration list for PBXNativeTarget "WhatIsTheDose3Tests" */;
+			buildConfigurationList = F7B91A712099C95B00CC0416 /* Build configuration list for PBXNativeTarget "WhatIsTheDoseTests" */;
 			buildPhases = (
 				F7B91A612099C95B00CC0416 /* Sources */,
 				F7B91A622099C95B00CC0416 /* Frameworks */,
@@ -132,9 +135,9 @@
 			dependencies = (
 				F7B91A672099C95B00CC0416 /* PBXTargetDependency */,
 			);
-			name = WhatIsTheDose3Tests;
+			name = WhatIsTheDoseTests;
 			productName = WhatIsTheDose3Tests;
-			productReference = F7B91A652099C95B00CC0416 /* WhatIsTheDose3Tests.xctest */;
+			productReference = F7B91A652099C95B00CC0416 /* WhatIsTheDoseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -156,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F7B91A4A2099C95B00CC0416 /* Build configuration list for PBXProject "WhatIsTheDose3" */;
+			buildConfigurationList = F7B91A4A2099C95B00CC0416 /* Build configuration list for PBXProject "WhatIsTheDose" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,8 +172,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7B91A4E2099C95B00CC0416 /* WhatIsTheDose3 */,
-				F7B91A642099C95B00CC0416 /* WhatIsTheDose3Tests */,
+				F7B91A4E2099C95B00CC0416 /* WhatIsTheDose */,
+				F7B91A642099C95B00CC0416 /* WhatIsTheDoseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -203,6 +206,7 @@
 				F7B91A572099C95B00CC0416 /* SecondViewController.swift in Sources */,
 				F7B91A532099C95B00CC0416 /* AppDelegate.swift in Sources */,
 				F7B91A552099C95B00CC0416 /* FirstViewController.swift in Sources */,
+				F7B91A752099DEB700CC0416 /* UITextField+DoneCancelToolbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7B91A6A2099C95B00CC0416 /* WhatIsTheDose3Tests.swift in Sources */,
+				F7B91A6A2099C95B00CC0416 /* WhatIsTheDoseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +223,7 @@
 /* Begin PBXTargetDependency section */
 		F7B91A672099C95B00CC0416 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F7B91A4E2099C95B00CC0416 /* WhatIsTheDose3 */;
+			target = F7B91A4E2099C95B00CC0416 /* WhatIsTheDose */;
 			targetProxy = F7B91A662099C95B00CC0416 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -364,12 +368,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M3W3PV87J;
-				INFOPLIST_FILE = WhatIsTheDose3/Info.plist;
+				INFOPLIST_FILE = WhatIsTheDose/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = no.nilsnh.WhatIsTheDose3;
+				PRODUCT_BUNDLE_IDENTIFIER = no.nilsnh.WhatIsTheDose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,12 +386,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M3W3PV87J;
-				INFOPLIST_FILE = WhatIsTheDose3/Info.plist;
+				INFOPLIST_FILE = WhatIsTheDose/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = no.nilsnh.WhatIsTheDose3;
+				PRODUCT_BUNDLE_IDENTIFIER = no.nilsnh.WhatIsTheDose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,17 +405,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M3W3PV87J;
-				INFOPLIST_FILE = WhatIsTheDose3Tests/Info.plist;
+				INFOPLIST_FILE = WhatIsTheDoseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = no.nilsnh.WhatIsTheDose3Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = no.nilsnh.WhatIsTheDoseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatIsTheDose3.app/WhatIsTheDose3";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatIsTheDose.app/WhatIsTheDose";
 			};
 			name = Debug;
 		};
@@ -422,24 +426,24 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M3W3PV87J;
-				INFOPLIST_FILE = WhatIsTheDose3Tests/Info.plist;
+				INFOPLIST_FILE = WhatIsTheDoseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = no.nilsnh.WhatIsTheDose3Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = no.nilsnh.WhatIsTheDoseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatIsTheDose3.app/WhatIsTheDose3";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatIsTheDose.app/WhatIsTheDose";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F7B91A4A2099C95B00CC0416 /* Build configuration list for PBXProject "WhatIsTheDose3" */ = {
+		F7B91A4A2099C95B00CC0416 /* Build configuration list for PBXProject "WhatIsTheDose" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7B91A6C2099C95B00CC0416 /* Debug */,
@@ -448,7 +452,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7B91A6E2099C95B00CC0416 /* Build configuration list for PBXNativeTarget "WhatIsTheDose3" */ = {
+		F7B91A6E2099C95B00CC0416 /* Build configuration list for PBXNativeTarget "WhatIsTheDose" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7B91A6F2099C95B00CC0416 /* Debug */,
@@ -457,7 +461,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7B91A712099C95B00CC0416 /* Build configuration list for PBXNativeTarget "WhatIsTheDose3Tests" */ = {
+		F7B91A712099C95B00CC0416 /* Build configuration list for PBXNativeTarget "WhatIsTheDoseTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7B91A722099C95B00CC0416 /* Debug */,
